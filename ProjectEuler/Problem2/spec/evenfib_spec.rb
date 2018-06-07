@@ -6,8 +6,13 @@ describe Fib do
     @total = Fib.new
   end
 
-  it "should start with 1" do
+  it "should start with 1 then 2" do
     expect(@total.array[0]).to eq 1
+    expect(@total.array[1]).to eq 2
+  end
+
+  it "should correctly add two numbers together" do
+    expect(@total.gen_fib(1, 2)).to eq 3
   end
 
   it "should generate a valid Fibonacci sequence" do

@@ -1,7 +1,9 @@
 class Fib
 
+  # Makes @array available everywhere (e.g. in rspec)
   attr_accessor :array
 
+  # Initialize is a ruby method that runs first
   def initialize
     @array = Array.new
     # Adds 1 and 2 to the array
@@ -45,7 +47,3 @@ class Fib
   end
 
 end
-
-# a = Fib.new
-# a.gen_sequence 10
-# p a.array
